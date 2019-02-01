@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TextNinja</string>
+    <string name="upload_doc">Upload Doc</string>
+    <string name="enter_url">Enter your URL</string>
+    <string name="fetch_doc">Fetch Doc</string>
+    <string name="app_description">Upload a document or provide a link to the document</string>
+    <string name="or">OR</string>
+
+    <string name="title_activity_document_view">DocumentView</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="find_similar_paragraphs">Find Similar Paragraphs</string>
+</resources>
