@@ -10,4 +10,5 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="find_similar_paragraphs">Find Similar Paragraphs</string>
+    <string name="enter_valid_path">Please enter a valid path</string>
 </resources>
