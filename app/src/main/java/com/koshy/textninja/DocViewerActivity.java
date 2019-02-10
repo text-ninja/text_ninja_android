@@ -14,8 +14,8 @@ public class DocViewerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doc_viewer);
-//        String stringExtra = getIntent().getStringExtra(MainActivity.FILE_DATA);
-        String stringData = Utils.loadJSONFromAsset(this);
+        String stringData = getIntent().getStringExtra(MainActivity.FILE_DATA);
+//        String stringData = Utils.loadJSONFromAsset(this);
         String[] paras = stringData.split("\n");
 //        String[] ar = new String[]{paras[paras.length - 3], paras[paras.length - 2], paras[paras.length - 1]};
         DocViewAdapter docViewAdapter = new DocViewAdapter(paras, this);

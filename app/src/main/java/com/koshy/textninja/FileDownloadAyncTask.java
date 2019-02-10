@@ -29,23 +29,23 @@ public class FileDownloadAyncTask extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... voids) {
         String filePath = downloadFile();
-        try {
-            // Create a URL for the desired page
-            URL url = new URL(path);
-
-            // Read all the text returned by the server
-            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
-            StringBuilder sb = new StringBuilder("");
-            String str;
-            while ((str = in.readLine()) != null) {
-                // str is one line of text; readLine() strips the newline character(s)
-                sb.append(str);
-            }
-            in.close();
-            return sb.toString();
-        } catch (MalformedURLException e) {
-        } catch (IOException e) {
-        }
+//        try {
+//            // Create a URL for the desired page
+//            URL url = new URL(path);
+//
+//            // Read all the text returned by the server
+//            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+//            StringBuilder sb = new StringBuilder("");
+//            String str;
+//            while ((str = in.readLine()) != null) {
+//                // str is one line of text; readLine() strips the newline character(s)
+//                sb.append(str);
+//            }
+//            in.close();
+//            return sb.toString();
+//        } catch (MalformedURLException e) {
+//        } catch (IOException e) {
+//        }
         if (filePath != null) return filePath;
         return null;
     }

@@ -120,6 +120,6 @@ public class MainActivity extends AppCompatActivity implements Utils.OnFileDownl
         }
         Log.d(TAG, "onFileDownloadComplete: Data : " + data);
         String stringData = Utils.readFile(data);
-        startNextActivity(data);
+        startNextActivity(stringData);
     }
 }
