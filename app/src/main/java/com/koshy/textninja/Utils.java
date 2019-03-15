@@ -6,19 +6,26 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.support.v4.content.CursorLoader;
+import android.text.TextUtils;
+import android.util.Log;
 
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.util.ArrayList;
 
 public class Utils {
+
+    public static final String TAG = Utils.class.getSimpleName();
+
     public interface OnFileDownloadComplete {
-        void onFileDownloadComplete(String data);
+        void onFileDownloadComplete(ArrayList<String> data);
+    }
+
+    public interface OnApiFetchComplete {
+        void onApiFetchComplete(String data);
     }
 
     public static String loadJSONFromAsset(Context context) {
@@ -37,31 +44,50 @@ public class Utils {
         return data;
     }
 
-    public static String readFile(String path) {
+    public static ArrayList<String> readFile(String path) {
+//        StringBuilder text = new StringBuilder();
+        ArrayList<String> paragraphs = new ArrayList<>();
         try {
+//                File sdcard = Environment.getExternalStorageDirectory();
             File file = new File(path);
-            int length = (int) file.length();
 
-            byte[] bytes = new byte[length];
-
-            FileInputStream in = null;
-
-            in = new FileInputStream(file);
-
-            try {
-                in.read(bytes);
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                in.close();
-            }
-            String contents = new String(bytes);
-            return contents;
-
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            paragraphs = getParagraphs(br);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
+        return paragraphs;
+    }
+
+    public static ArrayList<String> getParagraphs(BufferedReader br) throws IOException {
+        ArrayList<String> paragraphs = new ArrayList<>();
+        String line;
+        int i = -1;
+        while ((line = br.readLine()) != null) {
+            if (!TextUtils.isEmpty(line)) {
+                line = line.trim();
+//                if (paragraphs.size() > 0) {
+//                    String lastChar = paragraphs.get(i).substring(paragraphs.get(i).length() - 1);
+//                    if (!lastChar.equals(".") && !lastChar.equals("!") && !lastChar.equals("?") && !lastChar.equals("\"")) {
+//                        String p = paragraphs.get(i) + " " + line;
+//                        Log.d(TAG, "getParagraphs: " + p);
+//                        paragraphs.add(i, p);
+//                    } else{
+//                        paragraphs.add(line);
+//                        i++;
+//                    }
+//                } else {
+//                    paragraphs.add(line);
+//                    i++;
+//                }
+                 paragraphs.add(line);
+
+            }
+//                    text.append(line);
+//                    text.append('\n');
+        }
+        br.close();
+        return paragraphs;
     }
 
     public static String getFileName(Uri uri, Context context) {

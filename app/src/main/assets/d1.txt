@@ -1,0 +1,73 @@
+I suppose if you’d held me down in my early teens, I’d have happily called myself a “Phone Phreak”. However, a lot of that was because if you scoped around the world of BBSes and Textfiles at the time, people who called themselves Phone Phreaks had the coolest attitude, textfiles, and history. While “Hackers” were of great programming skill and able to use computers in neat ways, and “Crackers” had the coding skills to break copy protection, Phone Phreaks could point back nearly a hundred years to this incredible phone system and rumors of people who could float among the wires and do amazing stuff. The whole Phreaking art seemed to project a sense of tradition, skill and honor that, to a 13-year-old, was pretty amazing stuff. A bonus for myself was that textfiles showing up on bulletin boards were always the best read if they were about Phone Phreaking. Textfiles.com is jam-packed with phreaking textfiles of all stripe that I tracked down throughout the country, files that promised the world and occasionally even delivered. I saw in these files people brilliant enough to look up to. I totally bought in.
+
+So I got the lineman’s “butt-set” and ripped apart a few telephones and did some wiring around the house, and fancied myself one of this tribe. But, at best, I was less a phone phreak than a Phreak Tourist, a near-the-edges guy who was good at observing and collecting but not much else. This always worked in my favor because I never seemed to be out to “get” something or gain some sort of upper hand on my contemporaries: I just wanted to gather stuff and collect it and then give it to others. I therefore got to be near a lot of neat things, even if I myself wasn’t the neat thing in question, or the creator of the neat thing.
+
+On the other hand, my friends and associates were always doing neat things, using phones, computers, ham radio, and even cars and guns. I met some amazing folks who weren’t afraid to stick a hand deep into some wired box of death or yank on power supplies until a blue spark signalled they were heading in the right direction. I was lucky to know them, and they lived the dreams I dreamed.
+
+As a Phreak Tourist, it was easy to boil Phreaking down to the most obvious two talismans that recognized the efforts of the art: telephone conferences and free phone calls. In an era where a telephone call 20 miles from your home could be a sizeable financial burden to a home if it sustained for hours, it was inevitable that I and many others who intended to spend days online would find any way to reduce crushing costs for our phone calls. This was done using something we euphemistically called “codes” or “phone codes” but which in fact mostly were cases of calling alternate long distance phone carriers and typing in false calling card numbers until they worked. If this sounds vaguely illegal, take out the “vaguely” part. And if it sounds difficult, it wasn’t. As astounding as it might be in the eye of the modern user of telecommunications, some of the alternate long distance companies had calling card numbers a mere 4 or 5 digits long. Teenagers come in two main flavors: disinterested and scarily intense, and a scarily intense teenager could slice through a 4 or even 5-digit code set like a hot knife through cellophane.
+
+I have very strong memories of lying in bed, in the dark, with a telephone under my right hand, my head on a pillow with a telephone handset pressed against my head. I could easily dial without looking at the buttons, not unlike a blind person, and I could remember simple sets of numbers. It was trivial, therefore, to be able to spend those hours after one might drift off to sleep instead tapping away at a touch-tone keypad, blowing through the access number and then typing in a phone number and a code, and then waiting in that distant dark space to see if the phone would ring. To this day I can remember the telephone number of my favorite BBS, Sherwood Forest II: 914-357-1519. I haven’t been on Sherwood Forest II in over twenty years. I’d dial, and wait to hear if I got through, then mentally file the working code and move on. What phone company could have honestly expected that level of interest and drive from suburban youth? (They did, eventually, catch on.)
+
+Meanwhile, the conferences were the other lifeblood. As exciting as it was to speak on the telephone, nothing ever outdid the mass of information, socializing and joy of a multi-party conversation between like-minded folks… or even non-like-minded folks. The difference between a two-party call and a telephone conference was like the difference between a Sno-cone and skiing. And the best part was how sometimes the conference would come to you, unannounced, just you picking up your ringing phone and a dozen people would call out your name and drag you into the never-ending conversation.
+
+In today’s age of SIP, Asterisk and Skype, telephone conferences are still going on, but they’re numbingly simple to achieve. It’s an ancilliary part of the process that you can make them happen, and you instead can focus on the good stuff, like adding the right people or choosing a good time or theme to drive the call. I was recently interviewed by two teenagers via Skype for their hacker radio program; we spoke together from three different states, and one of my interviewers had to bargain with his mom to let him finish recording the show before he continued his Bar Mitzvah practice. This is quite a leap from a time I knew where being able to conduct a phone conference was on the same level of reverence as being able to fly a helicopter.
+
+There were several ways to generate a phone conference, ranging from using a PBX system at an office to do so (very rare), connecting to a “telephone bridge” where a switching system might have a conference set up and people could call in (just a few, traded like gold), or, in many cases, calling into a company called Alliance Teleconference, which used 700 numbers you dialed that then made you a “moderator”. As a moderator, you could then call in a bunch of other folks, and talk to someone you just dialed before adding them to the big mix. Moderators would often dial a second phone line in their house so they could avoid missing any part of the “con call”.
+
+While the other methods were spotty (no access to a PBX, phone bridges guarded intensely and for good reason), Alliance Teleconference was dependable; after all, it was a business. And, because it was a business, it was intensely expensive. The charges, as were told to me, were something on the range of a dollar a minute per line, plus long distance charges. Mull that for a moment. A one hour telephone call between you and your five buddies discussing your plans for the weekend was something in the range of $300, plus long distance if some of your buddies were a ways away. That’s scary money, especially if you’re at an age where you’ve never actually held three hundred dollars of currency in your hand at the same time in your life.
+
+The two options presented were to wait and grow old enough to afford this, or steal it. And waiting is boring.
+
+Most phone codes didn’t work with the Alliance Teleconference; they just didn’t recognize “0-700” as a valid area code, which was the first part of Alliance’s telephone number. The easiest way to do it was to find a cheese box.
+
+A cheese box, or more accurately the need for one, dates to before call forwarding was an available option on telephone lines. Now, you can tell the phone system that any calls to your number should be immediately forwarded elsewhere. Usually you’re charged for this, but it’s not so bad and it just reflects the fact that you’re making the equivalent of two phone calls. In the analog switch days, people who wanted to be reached 24 hours a day but didn’t have a very expensive mobile phone, bought a cheese box. More often called a “call forwarder”, it would, when turned on, answer the phone, and immediately call a second number on a second phone line and connect the two. In this way, you could be “on call” 24 hours a day even if you actually went home at night. This was popular with plumbers, doctors, dentists, and other such firms.
+
+You, the aforementioned scarily intense teenager, needed only to call these places, one by one, and then not say anything when the sleepy capitalist answered the phone. If you stayed on until after they hung up, you would get the dial tone of the second telephone line. At that point, the world was your oyster, or at least, the world was your victim’s oyster but you were getting the pearl. (It was best to do this from a payphone, just to be sure it worked right, as you might have only gotten your own dial tone, with hilarious results).
+
+Really, you could then call any number, but you got the most bang for your buck by calling in an Alliance Teleconference and that’s what all the people I know did. Phone numbers would be called, people quizzed, and ultimately you would suck in 10 or 20 people into a conference. The conference would then rage for hours, people joining and dropping, until the rays of sunlight peeking into your room meant the telephone owner was going to head into work and you’d better get the hell off the line.
+
+(Bear in mind that occasionally Alliance Teleconference would catch on that something odd was going on; I can recall one particular teleconference where an Alliance Operator bounced into our conference and said, loudly, “SORRY BOYS, THE PARTY’S OVER”, and then proceeded to knock us off, one by one, off the line. I especially recalled this because we began trying to bargain with the operator, trying to charm her into letting us continue to rack hundreds of dollars in charges. As people were knocked off, we’d wail and keen over it: “Oh God, Oh God, they got Seth. SETH!! SETH!!”)
+
+After the deed was done, at the end of the month, the reckoning would happen. A bill would be generated, and sent out to the owner of that cheese-box enabled phone line. This bill would be, as you can now infer, usually in the range of a few thousand dollars. I am sure you could power a battleship from the amount of anger this would generate. After a frantic call (or calls) to Alliance Teleconference, the victim would get the charge stricken, and, as far as anyone would likely be concerned, the story was over.
+
+I mention all this to tell you of the time someone didn’t consider the story over.
+
+We had a very special telephone line in the house; one which was used as part of the Guardian System, where my father would call into the mainframe at IBM, and then it would hang up and call the special telephone line back. This provided the whole transaction with much better security than simply user-password. This line was paid for by IBM. As a result, the line was listed as IBM. In fact, if you did a reverse lookup on it, all it was listed as in terms of name and address was “IBM, Armonk, NY”. I didn’t live in Armonk. I certainly wasn’t IBM.
+
+This was my other phone line besides the BBS telephone line and our regular phone line. It was the easiest way to call me all hours of the day and night, because it only rang in my room. (It was downstairs as well, in Dad’s study, but I had an extension with a ringing phone in my room.) This was the number I was called on for a teleconference that lasted for about eight hours. Like all other similar conferences, I had a fantastic time, and at the end of it, hung up and went about my business.
+
+A month later, I got a phone call on my line. I answer the phone “hello” generally, and did so in this case. Lucky me.
+
+The woman who called turned out to be one of the owners of a security company (one of those places that sells burglar alarms and a service to answer the phone and call the police when necessary). She had gotten a many thousands-of-dollars bill for a teleconference. She was the owner of the cheese box. She was very pissed, but not in a way that manifested itself in screaming. Instead, she and I began a little conversation.
+
+Because of the situation with the telephone, all she knew was that I was “IBM, Armonk NY”. Listening to me over the phone, she knew I was likely a young male. And that was it. She was calling to ask me about the teleconference.
+
+Naturally, I played stupid. Obsidian block stupid. Broken TV stupid. And cheerful. That cheerful, playful tone one takes when they feel they have total immunity and impunity. I think this amused her, even as she was trying to discern who exactly I was and what my deal was.
+
+We danced, the two of us, in a way I have rarely ever danced since. Pursuer and pursued, where Pursued held all the cards and Pursuer held a big-ass whopping phone bill. She, pointing out how I must certainly know who called me, as I was the first number called in the teleconference and I had stayed on the longest. Me, saying I got phone calls all the time and I never really could figure out who all these crazy kids were.
+
+Twenty years on, I can still remember the dance.
+
+“So, what else do you do besides answer expensive phone calls?”
+
+“Oh, this and that. Read, hang out at school.”
+
+“Oh! What school would that be?”
+
+“Ah! Ah! Just a school like any other, no need to name it, it’s so minor.”
+
+and so on.
+
+We talked for an hour before she wished me well and hung up. A week later, she called again, seeing if my parent would pick up, or I’d slip up. Again we danced, discussed her security company, about what they did, how the stuff they did serviced the local area. She’d mention a place and see if I reacted to it, giving her a hint of where I was. She’d mention nearby schools, nearby highways, see what I thought.
+
+Sometime during this, she got persistent enough that one of the more well-off people involved in the teleconference anonymously sent the security company some money. Not all of it, but enough that it offset the efforts of getting the charges wiped a bit. I know this because she called me and talked to me about it. Her and me, old buddies, just passing the time… without me ever giving my name.
+
+All in all, it was about a half-dozen times she called before she disappeared forever.
+
+Victorious, I forgot about the security company and the nice but dogged lady who called me. I continued to run my BBS, was on conferences, graduated from high school and ultimately started college.
+
+On my holiday back, my dad told me a letter was waiting for me. It was addressed to me, at my home address, with no return address.
+
+Inside was her business card, and nothing else.
+
+I’ve never laughed so hard or enjoyed losing a game as I did that day.

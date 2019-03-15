@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_version"
+        app:showAsAction="always"
+        android:title="V"
+        />
+
+    <item android:id="@+id/menu_paras"
+        app:showAsAction="always"
+        android:title="P"
+        />
+
+    <item android:id="@+id/menu_reset"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        app:showAsAction="always"
+        android:title="@string/reset"
+        />
+    <!--android:title="@string/add_contacts"-->
+
+    <item android:id="@+id/menu_back"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        app:showAsAction="always"
+        android:title="@string/back"
+        />
+    <!--android:title="@string/add_contacts"-->
+
+    <item android:id="@+id/menu_forward"
+        android:icon="@drawable/ic_arrow_forward_black_24dp"
+        app:showAsAction="always"
+        android:title="@string/forward"
+        />
+    <!--android:title="@string/add_contacts"-->
+</menu>

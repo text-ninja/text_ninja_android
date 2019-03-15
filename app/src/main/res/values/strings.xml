@@ -11,4 +11,11 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="find_similar_paragraphs">Find Similar Paragraphs</string>
     <string name="enter_valid_path">Please enter a valid path</string>
+    <string name="reset">Reset</string>
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="cannot_go_back">Cannot go back</string>
+    <string name="select_paras">Please select a paragraph</string>
+    <string name="invalid_paras_selected">Invalid Paras selected</string>
+    <string name="file_failed_to_fetch">File failed to fetch</string>
 </resources>

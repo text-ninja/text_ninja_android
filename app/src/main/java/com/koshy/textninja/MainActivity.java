@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,11 +14,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.io.File;
-import java.net.URISyntaxException;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements Utils.OnFileDownloadComplete {
-    public static final String DEFAULT_FILE_NETWORK_PATH = "https://drive.google.com/file/d/1wdm4B1yBz8o-FbNXMyjps1uOrMVxmgIQ/view?usp=sharing";
+    public static final String DEFAULT_FILE_NETWORK_PATH = "https://raw.githubusercontent.com/text-ninja/text-ninja/master/test_file.txt";
     public static final int REQUEST_CODE_DOC = 101;
     private static final String TAG = MainActivity.class.getSimpleName();
     public static final String FILE_DATA = "fileData";
@@ -96,30 +94,42 @@ public class MainActivity extends AppCompatActivity implements Utils.OnFileDownl
         switch (requestCode) {
             case REQUEST_CODE_DOC:
                 Uri uri = data.getData();
-                String stringPath = FileUtils.getPath(this, uri);
-                Log.d(TAG, "onActivityResult: " + stringPath);
+                Log.d(TAG, "onActivityResult: " + uri.getPath());
+                try {
+                    String stringPath = FileUtils.getPath(this, uri);
+                    Log.d(TAG, "onActivityResult: " + stringPath);
 
-                String paras = Utils.readFile(stringPath);
-                Log.d(TAG, "onActivityResult: " + paras);
-                startNextActivity(paras);
+                    ArrayList<String> stringArrayList = Utils.readFile(stringPath);
+                    if (stringArrayList == null || stringArrayList.size() == 0) {
+                        Toast.makeText(this, R.string.enter_valid_path, Toast.LENGTH_LONG).show();
+                        return;
+                    }
 
+                    Log.d(TAG, "onActivityResult: " + stringArrayList.size());
+                    startNextActivity(stringArrayList);
+                } catch (Exception e) {
+                    Toast.makeText(this, R.string.file_failed_to_fetch, Toast.LENGTH_LONG).show();
+                    Log.e(TAG, "onActivityResult: " + e.getMessage());
+                }
         }
     }
 
-    public void startNextActivity(String stringData) {
+    public void startNextActivity(ArrayList<String> stringData) {
         Intent intent = new Intent(MainActivity.this, DocViewerActivity.class);
-        intent.putExtra(FILE_DATA, stringData);
+        intent.putStringArrayListExtra(FILE_DATA, stringData);
         MainActivity.this.startActivity(intent);
     }
 
 
     @Override
-    public void onFileDownloadComplete(String data) {
-        if (data == null) {
+    public void onFileDownloadComplete(ArrayList<String> data) {
+        Log.d(TAG, "onFileDownloadComplete: Data : " + data.size());
+
+        if (data == null || data.size() == 0) {
             Toast.makeText(this, R.string.enter_valid_path, Toast.LENGTH_LONG).show();
+            return;
         }
-        Log.d(TAG, "onFileDownloadComplete: Data : " + data);
-        String stringData = Utils.readFile(data);
-        startNextActivity(stringData);
+        Log.d(TAG, "onFileDownloadComplete: " + data);
+        startNextActivity(data);
     }
 }

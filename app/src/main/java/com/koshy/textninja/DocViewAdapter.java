@@ -9,13 +9,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class DocViewAdapter extends RecyclerView.Adapter<DocViewAdapter.ParagraphViewHolder> {
-    String[] mParas;
-    Context mContext;
+import java.util.ArrayList;
+import java.util.Arrays;
 
-    public DocViewAdapter(String[] paras, Context context) {
+public class DocViewAdapter extends RecyclerView.Adapter<DocViewAdapter.ParagraphViewHolder> {
+    ArrayList<String> mParas;
+    Context mContext;
+    public boolean[] mSelected;
+
+    public DocViewAdapter(ArrayList<String> paras, Context context) {
         this.mParas = paras;
         this.mContext = context;
+        mSelected = new boolean[paras.size()];
+        Arrays.fill(mSelected, false);
     }
 
     @NonNull
@@ -28,20 +34,37 @@ public class DocViewAdapter extends RecyclerView.Adapter<DocViewAdapter.Paragrap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ParagraphViewHolder paragraphViewHolder, int i) {
-        paragraphViewHolder.paraTextView.setText(mParas[i]);
+    public void onBindViewHolder(@NonNull final ParagraphViewHolder paragraphViewHolder, final int i) {
+        paragraphViewHolder.paraTextView.setText(mParas.get(i));
+        if(mSelected[i]) {
+            paragraphViewHolder.paraTextView.setTextColor( mContext.getResources().getColor(R.color.colorPrimary));
+        } else {
+            paragraphViewHolder.paraTextView.setTextColor( mContext.getResources().getColor(android.R.color.tab_indicator_text));
+        }
         paragraphViewHolder.paraTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                if (paragraphViewHolder.paraTextView.getTextColors().)
-                paragraphViewHolder.paraTextView.setTextColor( mContext.getResources().getColor(R.color.colorPrimary));
+                if(!mSelected[i]) {
+                    paragraphViewHolder.paraTextView.setTextColor( mContext.getResources().getColor(R.color.colorPrimary));
+                } else {
+                    paragraphViewHolder.paraTextView.setTextColor( mContext.getResources().getColor(android.R.color.tab_indicator_text));
+                }
+                mSelected[i] = !mSelected[i];
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return mParas.length;
+        return mParas.size();
+    }
+
+    public void setNewVersion(ArrayList<String> strings) {
+        mParas = strings;
+        mSelected = new boolean[mParas.size()];
+        Arrays.fill(mSelected, false);
+        notifyDataSetChanged();
     }
 
     public class ParagraphViewHolder extends RecyclerView.ViewHolder {
